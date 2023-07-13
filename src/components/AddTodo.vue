@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="onSubmit">
+  <form v-on:submit.prevent="onSubmit">
     <input type="text" v-model="title" />
     <button type="submit">Create</button>
   </form>
@@ -31,6 +31,7 @@ export default {
 <style scoped>
 form {
   display: flex;
+  margin-bottom: 0.5rem;
 }
 input {
   width: 400px;
